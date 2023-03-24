@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swipper CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/js/script.js" />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="/img/1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">We build quality structure</span>
+            <h2>
+              Our team of experts <br />
+              brings you value for money
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="/img/2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Industry standard procedure</span>
+            <h2>
+              Be rest assured that <br />
+              enforce standard
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="/img/3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Future resell value</span>
+            <h2>
+              Our structures can be <br />
+              resold in the future as an investment
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swipper Script -->
+    <script src="/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        // spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+    </script>
+  </body>
+</html>
